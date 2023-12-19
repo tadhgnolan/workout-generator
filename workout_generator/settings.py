@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-_+d_@16&ka^m@dq%!tllavgv%#tcs_h(x097#j$qv_%&ss_z+=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-tadhgnolan-workoutgener-vlwfvzmz5rp.ws-eu106.gitpod.io']
+ALLOWED_HOSTS = ['8000-tadhgnolan-workoutgener-vlwfvzmz5rp.ws-eu106.gitpod.io', '8000-tadhgnolan-workoutgener-vlwfvzmz5rp.ws-eu107.gitpod.io']
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
+    'generator',
 ]
 
 MIDDLEWARE = [
