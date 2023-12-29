@@ -6,7 +6,14 @@ class Workout(models.Model):
     """
     The body part for the workout: eg: legs, shoulders, arms, back, chest, core
     """
-    body_part = models.CharField(max_length=25, null=False, blank=False)
+    BODY_PARTS = (
+        (0, "legs"),
+        (1, "arms"),
+
+    )
+
+    body_part = models.IntergerField(choices = BODY_PARTS, default=0)
+    muscle_group = models.CharField(max_length=25, null=False, blank=False)
 
     def __str__(self):
         return self.body_part
