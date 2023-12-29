@@ -25,9 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_+d_@16&ka^m@dq%!tllavgv%#tcs_h(x097#j$qv_%&ss_z+='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-tadhgnolan-workoutgener-vlwfvzmz5rp.ws-eu106.gitpod.io', '8000-tadhgnolan-workoutgener-vlwfvzmz5rp.ws-eu107.gitpod.io']
+ALLOWED_HOSTS = ['8000-tadhgnolan-workoutgener-vlwfvzmz5rp.ws-eu106.gitpod.io', '8000-tadhgnolan-workoutgener-vlwfvzmz5rp.ws-eu107.gitpod.io',
+                '.herokuapp.com']
 
 
 # Application definition
@@ -112,12 +113,17 @@ WSGI_APPLICATION = 'workout_generator.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
