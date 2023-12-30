@@ -9,10 +9,12 @@ class Workout(models.Model):
     BODY_PARTS = (
         (0, "legs"),
         (1, "arms"),
-
+        (2, "chest"),
+        (3, "shoulders"),
+        (4, "back"),
     )
 
-    body_part = models.IntergerField(choices = BODY_PARTS, default=0)
+    body_part = models.IntegerField(choices = BODY_PARTS, default=0)
     muscle_group = models.CharField(max_length=25, null=False, blank=False)
 
     def __str__(self):
