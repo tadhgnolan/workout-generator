@@ -14,11 +14,11 @@ class Workout(models.Model):
         (4, "back"),
     )
 
-    body_part = models.IntegerField(choices = BODY_PARTS, default=0)
-    muscle_group = models.CharField(max_length=25, null=False, blank=False)
+    name = models.CharField(max_length=75, null=False, blank=False)
+    body_part = models.IntegerField(choices=BODY_PARTS, default=0)
 
     def __str__(self):
-        return self.body_part
+        return self.name
 
 
 class Exercise(models.Model):
