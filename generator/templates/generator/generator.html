@@ -2,25 +2,64 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col">generator</div>
+<div class="container header-container my-5">
+    <div class="row my-5">
+        <div class="col my-5">generator</div>
     </div>
 </div>
 {% endblock %}
 
 {% block content %}
 <div class="container my-5">
-    <div class="row my-5">
-        <div class="col-12 col-md-6 my-5">
-            {% for workout in generated_workout %}
-            {% for exercise in workout %}
-            {{ exercise.name }}<br>
-            {{ exercise.muscle_group }}<br>
-            {% endfor %}
-            <br><br>
-            {% endfor %}
+    <div class="row row-cols-1 row-cols-sn-2 row-cols-md3 my-5">
+        <!-- loop over the generated workouts to get 1 random exercise from each body part -->
+        {% for workout in generated_workout %}
+        {% for exercise in workout %}
+
+        <div class="col mb-5">
+            <div class="card h-100">
+                <!-- card header -->
+                <div class="card-header bg-dark text-light">
+                    <!-- exercise name -->
+                    <h5 class="card-title text-center">
+                        <small>{{ exercise.workout.name }}</small>
+                        <br>
+                        {{ exercise.name }}<br>
+                    </h5>
+                </div>
+                <!-- card body -->
+                <div class="card-body">
+                    <p class="card-text">
+                        <!-- description -->
+                        {{ exercise.description }}
+
+                        <!--  -->
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-itmes-center">
+                            Sets
+                            <span class="badge badge-primary badge-pill">{{ exercise.sets }}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-itmes-center">
+                            Reps
+                            <span class="badge badge-success badge-pill">{{ exercise.reps }}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-itmes-center">
+                            Muscle Focus
+                            <span class="badge badge-warning badge-pill">{{ exercise.muscle_focus }}</span>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+                <!-- card-footer -->
+                <div class="card-footer text-center bg-secondary text-light">
+                    <!-- external link to wiki page -->
+                    <a href="{{ exercise.wiki.link }}" target="_blank" rel="nofollow noreferred"
+                        class="btn btn-light">View Exercise</a>
+                </div>
+            </div>
         </div>
+        {% endfor %}
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
