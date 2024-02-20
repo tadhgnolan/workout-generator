@@ -22,11 +22,11 @@ def generator(request):
         # print("------")  # spacer only for testing
 
         # filter workouts by each unique body part
-        body_part_workouts = list(
-            exercises.filter(workout=body_part[0])
+        body_part_list = list(
+            exercises.filter(workout__body_part=body_part[0])
         )
         # grab a random workout using this body_part
-        random_workout = random.sample(body_part_workouts, 1)
+        random_workout = random.sample(body_part_list, 1)
         # append it to the list generated to the user
         generated_workout.append(random_workout)
 
