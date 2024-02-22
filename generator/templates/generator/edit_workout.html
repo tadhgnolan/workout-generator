@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">Edit Workout: {{ workout }}</div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <form action="{% url 'edit_workout' workout.id %}" method="post">
+                {% csrf_token %}
+                {{ workout_form.as_p }}
+                <button type="submit" class="btn btn-dark">Edit Workout</button>
+                <a href="{% url 'delete_workout' workout.id %}" class="btn-btn-danger">Delete Workout</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
