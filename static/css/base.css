@@ -1,13 +1,22 @@
-html {
+html,
+body {
     height: 100%;
 }
 
 body {
     background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+}
+
+body>footer {
+    position: sticky;
+    top: 100vh;
+}
+
+main {
+    margin-top: 5em;
 }
 
 /* from Bulma */
@@ -75,7 +84,7 @@ body {
         z-index: 1030;
     }
 
-    .header-container {
+    /* .header-container {
         padding-top: 164px;
-    }
+    } */
 }
