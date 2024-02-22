@@ -2,16 +2,16 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container header-container my-5">
-    <div class="row my-5">
-        <div class="col my-5">generator</div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col">generator</div>
     </div>
 </div>
 {% endblock %}
 
 {% block content %}
-<div class="container my-5">
-    <div class="row row-cols-1 row-cols-sn-2 row-cols-md3 my-5">
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
         <!-- loop over the generated workouts to get 1 random exercise from each body part -->
         {% for workout in generated_workout %}
         {% for exercise in workout %}
@@ -55,6 +55,9 @@
                     <!-- external link to wiki page -->
                     <a href="{{ exercise.wiki.link }}" target="_blank" rel="nofollow noreferred"
                         class="btn btn-light">View Exercise</a>
+                    {% if request.user.is_superuser %}
+                    <a href="{% url 'edit_workout' exercise.workout.id %}" class="btn btn-light">Edit Workout</a>
+                    {% endif %}
                 </div>
             </div>
         </div>
