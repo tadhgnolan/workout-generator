@@ -2,22 +2,16 @@
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item">
             <a href="{% url 'generator' %}" class="logo-font font-weight-bold nav-link text-black mr-5"
-                id="all-products-link">
+                id="generator-link">
                 Workouts
             </a>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="donate-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item">
+            <a href="{% url 'donation' %}" class="logo-font font-weight-bold nav-link text-black mr-5"
+                id="donation-link">
                 Donate
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="donate-link">
-                <a href="" class="dropdown-item">placeholder_5 &amp; placeholder_6</a>
-                <a href="" class="dropdown-item">placeholder_7</a>
-                <a href="" class="dropdown-item">placeholder_8</a>
-                <a href="" class="dropdown-item">placeholder_9</a>
-            </div>
         </li>
 
         <li class="nav-item dropdown">
