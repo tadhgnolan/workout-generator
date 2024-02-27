@@ -1,4 +1,6 @@
+import uuid
 from django.db import models
+
 
 class Donation(models.Model):
     order_number = models.CharField(max_length=2555, unique=True)

@@ -1,4 +1,8 @@
 from django import forms
+from .models import Donation
 
-class DonationForm(forms.Form):
-    amount = forms.DecimalField(max_digits=6, decimal_places=2, max_value=5, min_value=5)
+
+class DonationForm(forms.ModelForm):
+    class Meta:
+        model = Donation
+        fields = ("amount", "email")
