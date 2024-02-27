@@ -31,7 +31,7 @@ DEBUG = os.environ.get('DEBUG', False)
 
 ALLOWED_HOSTS = [
     '8000-tadhgnolan-workoutgener-vlwfvzmz5rp.ws-eu108.gitpod.io',
-    '.herokuapp.com'
+    '.herokuapp.com', 'https://workout-generator-43e8f8387f8d.herokuapp.com/', 'localhost'
 ]
 
 
