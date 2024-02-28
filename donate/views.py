@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from .forms import DonationForm
+from .models import Donation
 import stripe
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -23,7 +25,7 @@ def donation_view(request):
             return HttpResponseRedirect(reverse('success'))
     else:
         form = DonationForm()
-    return render(request, 'donation.html', {'form': form, 'public_key': setting.STRIPE_PUBLIC_KEY})
+    return render(request, 'donation.html', {'form': form, 'public_key': settings.STRIPE_PUBLIC_KEY})
 
 
 def donation_success(request, order_number):
