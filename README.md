@@ -1,66 +1,19 @@
 # [WORKOUT GENERATOR](https://workout-generator-43e8f8387f8d.herokuapp.com)
 
-
-## UX
-
-
-
-
-### Typography
-
-
-
-### New Site Users
-
-
-### Returning Site Users
-
-
-### Site Admin
-
-
-
-## Wireframes
-
-
-
-### Mobile Wireframes
-
-
-### Tablet Wireframes
-
-
-### Desktop Wireframes
-
-
-## Features
-
-
-### Existing Features
-
-
 ### Future Features
 
 ## Tools & Technologies Used
 
-
-- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
-- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [JavaScript](https://www.javascript.com) used for user interaction on the site.
-- [Python](https://www.python.org) used as the back-end programming language.
-- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
-- [GitHub](https://github.com) used for secure online code storage.
-- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
-- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [PostgreSQL](https://www.postgresql.org) used as the relational database management.
-- [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
-- [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Cloudinary](https://cloudinary.com) used for online static file storage.
-- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
+| Source | Location | Notes |
+| --- | --- | --- |
+| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
+| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
+| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
+| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
+| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
+| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 
 ## Database Design
-
 
 ```python
 class Product(models.Model):
@@ -80,7 +33,6 @@ class Product(models.Model):
         return self.name
 ```
 
-
 ## Agile Development Process
 
 ### GitHub Projects
@@ -88,6 +40,7 @@ class Product(models.Model):
 [GitHub Projects](https://github.com/tadhgnolan/workout-generator/projects) served as an Agile tool for this project.
 It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
 
+Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
 
 ### GitHub Issues
 
@@ -97,21 +50,21 @@ This site sells goods to individual customers, and therefore follows a `Business
 It is of the simplest **B2C** forms, as it focuses on individual transactions, and doesn't need anything
 such as monthly/annual subscriptions.
 
+It is still in its early development stages, although it already has a newsletter.
+
+A newsletter list can be used by the business to send regular messages to site users.
+For example, what items are on special offer, new items in stock,
+updates to business hours, notifications of events, and much more!
 
 ## Search Engine Optimization (SEO) & Social Media Marketing
 
-### Keywords
-
-### Social Media Marketing
-
-
 ### Newsletter Marketing
+
+I have incorporate a newsletter sign-up form on my application, to allow users to supply their
+email address if they are interested in learning more. 
 
 
 ## Testing
-
-
-## Deployment
 
 The live deployed application can be found deployed on [Heroku](https://workout-generator-43e8f8387f8d.herokuapp.com).
 
@@ -128,133 +81,48 @@ To obtain your own Postgres Database, sign-up with your GitHub account, then fol
 - Select the **Region** and **Data Center** closest to you.
 - Once created, click on the new database name, where you can view the database URL and Password.
 
-### Amazon AWS
-
-This project uses [AWS](https://aws.amazon.com) to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
-
-Once you've created an AWS account and logged-in, follow these series of steps to get your project connected.
-Make sure you're on the **AWS Management Console** page.
-
-#### S3 Bucket
-
-- Search for **S3**.
-- Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
-- Uncheck **Block all public access**, and acknowledge that the bucket will be public (required for it to work on Heroku).
-- From **Object Ownership**, make sure to have **ACLs enabled**, and **Bucket owner preferred** selected.
-- From the **Properties** tab, turn on static website hosting, and type `index.html` and `error.html` in their respective fields, then click **Save**.
-- From the **Permissions** tab, paste in the following CORS configuration:
-
-	```shell
-	[
-		{
-			"AllowedHeaders": [
-				"Authorization"
-			],
-			"AllowedMethods": [
-				"GET"
-			],
-			"AllowedOrigins": [
-				"*"
-			],
-			"ExposeHeaders": []
-		}
-	]
-	```
-
-- Copy your **ARN** string.
-- From the **Bucket Policy** tab, select the **Policy Generator** link, and use the following steps:
-	- Policy Type: **S3 Bucket Policy**
-	- Effect: **Allow**
-	- Principal: `*`
-	- Actions: **GetObject**
-	- Amazon Resource Name (ARN): **paste-your-ARN-here**
-	- Click **Add Statement**
-	- Click **Generate Policy**
-	- Copy the entire Policy, and paste it into the **Bucket Policy Editor**
-
-		```shell
-		{
-			"Id": "Policy1234567890",
-			"Version": "2012-10-17",
-			"Statement": [
-				{
-					"Sid": "Stmt1234567890",
-					"Action": [
-						"s3:GetObject"
-					],
-					"Effect": "Allow",
-					"Resource": "arn:aws:s3:::your-bucket-name/*"
-					"Principal": "*",
-				}
-			]
-		}
-		```
-
-	- Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (like above).
-	- Click **Save**.
-- From the **Access Control List (ACL)** section, click "Edit" and enable **List** for **Everyone (public access)**, and accept the warning box.
-	- If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
-
-#### IAM
-
-Back on the AWS Services Menu, search for and open **IAM** (Identity and Access Management).
-Once on the IAM page, follow these steps:
-
-- From **User Groups**, click **Create New Group**.
-	- Suggested Name: `group-workout-generator` (group + the project name)
-- Tags are optional, but you must click it to get to the **review policy** page.
-- From **User Groups**, select your newly created group, and go to the **Permissions** tab.
-- Open the **Add Permissions** dropdown, and click **Attach Policies**.
-- Select the policy, then click **Add Permissions** at the bottom when finished.
-- From the **JSON** tab, select the **Import Managed Policy** link.
-	- Search for **S3**, select the `AmazonS3FullAccess` policy, and then **Import**.
-	- You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
-
-		```shell
-		{
-			"Version": "2012-10-17",
-			"Statement": [
-				{
-					"Effect": "Allow",
-					"Action": "s3:*",
-					"Resource": [
-						"arn:aws:s3:::your-bucket-name",
-						"arn:aws:s3:::your-bucket-name/*"
-					]
-				}
-			]
-		}
-		```
-	
-	- Click **Review Policy**.
-	- Suggested Name: `policy-workout-generator` (policy + the project name)
-	- Provide a description:
-		- "Access to S3 Bucket for workout-generator static files."
-	- Click **Create Policy**.
-- From **User Groups**, click your "group-workout-generator".
-- Click **Attach Policy**.
-- Search for the policy you've just created ("policy-workout-generator") and select it, then **Attach Policy**.
-- From **User Groups**, click **Add User**.
-	- Suggested Name: `user-workout-generator` (user + the project name)
-- For "Select AWS Access Type", select **Programmatic Access**.
-- Select the group to add your new user to: `group-workout-generator`
-- Tags are optional, but you must click it to get to the **review user** page.
-- Click **Create User** once done.
-- You should see a button to **Download .csv**, so click it to save a copy on your system.
-	- **IMPORTANT**: once you pass this page, you cannot come back to download it again, so do it immediately!
-	- This contains the user's **Access key ID** and **Secret access key**.
-	- `AWS_ACCESS_KEY_ID` = **Access key ID**
-	- `AWS_SECRET_ACCESS_KEY` = **Secret access key**
-
-#### Final AWS Setup
-
-- If Heroku Config Vars has `DISABLE_COLLECTSTATIC` still, this can be removed now, so that AWS will handle the static files.
-- Back within **S3**, create a new folder called: `media`.
-- Select any existing media images for your project to prepare them for being uploaded into the new folder.
-- Under **Manage Public Permissions**, select **Grant public read access to this object(s)**.
-- No further settings are required, so click **Upload**.
-
 ### Stripe API
+
+This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
+
+Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
+
+- From your Stripe dashboard, click to expand the "Get your test API keys".
+- You'll have two keys here:
+	- `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
+	- `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
+
+As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
+
+- From your Stripe dashboard, click **Developers**, and select **Webhooks**.
+- From there, click **Add Endpoint**.
+	- `https://workout-generator-43e8f8387f8d.herokuapp.com/checkout/wh/`
+- Click **receive all events**.
+- Click **Add Endpoint** to complete the process.
+- You'll have a new key here:
+	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
+
+### Gmail API
+
+This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
+
+Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
+
+- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
+- Click on the **Accounts and Import** tab.
+- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
+- From this new page, select **Security** on the left.
+- Select **2-Step Verification** to turn it on. (verify your password and account)
+- Once verified, select **Turn On** for 2FA.
+- Navigate back to the **Security** page, and you'll see a new option called **App passwords**.
+- This might prompt you once again to confirm your password and account.
+- Select **Mail** for the app type.
+- Select **Other (Custom name)** for the device type.
+	- Any custom name, such as "Django" or workout-generator
+- You'll be provided with a 16-character password (API key).
+	- Save this somewhere locally, as you cannot access this key again later!
+	- `EMAIL_HOST_PASS` = user's 16-character API key
+	- `EMAIL_HOST_USER` = user's own personal Gmail email address
 
 ### Heroku Deployment
 
@@ -387,18 +255,8 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
-## Credits
+### Local VS Deployment
 
-### Content
-
-| Source | Location | Notes |
-| --- | --- | --- |
-| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 
 ### Media
 
