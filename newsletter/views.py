@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import signup
+from .models import SignupModel
 
-def signup(request):
-    signup = Signup.objects.get(title='Sign Up For Newsletter')
+def signup_view(request):
+    signup = SignupModel.objects.get(title='Sign Up For Newsletter')
     return render(request, 'signup.html', {'signup': signup})
