@@ -1,5 +1,7 @@
 # [WORKOUT GENERATOR](https://workout-generator-43e8f8387f8d.herokuapp.com)
 
+*Website not fully functional. Contains unresolved pathing errors*
+
 ### Future Features
 
 ## Tools & Technologies Used
