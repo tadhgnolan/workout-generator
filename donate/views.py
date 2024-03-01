@@ -22,10 +22,10 @@ def donation_view(request):
             )
             donation = Donation(amount=amount)
             donation.save()
-            return HttpResponseRedirect(reverse('success'))
+            return HttpResponseRedirect(reverse('donation_success', args=[donation.order_number]))
     else:
         form = DonationForm()
-    return render(request, 'donation.html', {'form': form, 'public_key': settings.STRIPE_PUBLIC_KEY})
+    return render(request, 'donate/donation.html', {'form': form, 'public_key': settings.STRIPE_PUBLIC_KEY})
 
 
 def donation_success(request, order_number):
