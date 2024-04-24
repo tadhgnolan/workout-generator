@@ -24,9 +24,10 @@ def generator(request):
             exercises.filter(workout__body_part=body_part[0])
         )
         # grab a random workout using this body_part
-        random_workout = random.sample(body_part_list, 1)
-        # append it to the list generated to the user
-        generated_workout.append(random_workout)
+        if len(body_part_list) > 0:
+            random_workout = random.sample(body_part_list, 1)
+            # append it to the list generated to the user
+            generated_workout.append(random_workout)
 
     template = "generator/generator.html"
     context = {
@@ -88,4 +89,60 @@ def delete_workout(request, id):
     workout = get_object_or_404(Workout, id=id)
     workout.delete()
     messages.success(request, "Workout updated!")
+    return redirect(reverse("generator"))
+
+
+def add_exercise(request):
+    """ Admin-only page to add new exercises """
+    if not request.user.is_superuser:
+        messages.error(request, "Access denied. Admin-only access")
+        return redirect(reverse("generator"))
+
+    exercise_form = ExerciseForm(request.POST or None)
+    if request.method == "POST":
+        if exercise_form.is_valid():
+            exercise_form.save()
+            messages.success(request, "Exercise added!")
+            return redirect(reverse("generator"))
+        messages.error(request, "Error, try again.")
+
+    template = "generator/add_exercise.html"
+    context = {
+        "exercise_form": exercise_form,
+    }
+    return render(request, template, context)
+
+
+def edit_exercise(request, id):
+    """ Admin-only page to edit exercises """
+    if not request.user.is_superuser:
+        messages.error(request, "Access denied. Admin-only access")
+        return redirect(reverse("generator"))
+
+    exercise = get_object_or_404(Exercise, id=id)
+    exercise_form = ExerciseForm(request.POST or None, instance=exercise)
+    if request.method == "POST":
+        if exercise_form.is_valid():
+            exercise_form.save()
+            messages.success(request, "Exercise updated!")
+            return redirect(reverse("generator"))
+        messages.error(request, "Error, try again.")
+
+    template = "generator/edit_exercise.html"
+    context = {
+        "exercise": exercise,
+        "exercise_form": exercise_form,
+    }
+    return render(request, template, context)
+
+
+def delete_exercise(request, id):
+    """ Admin-only page to delete exercises """
+    if not request.user.is_superuser:
+        messages.error(request, "Access denied. Admin-only access")
+        return redirect(reverse("generator"))
+
+    exercise = get_object_or_404(Exercise, id=id)
+    exercise.delete()
+    messages.success(request, "Exercise updated!")
     return redirect(reverse("generator"))
