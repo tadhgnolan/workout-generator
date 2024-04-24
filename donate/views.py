@@ -6,9 +6,11 @@ from .forms import DonationForm
 from .models import Donation
 import stripe
 
-stripe.api_key = settings.STRIPE_SECRET_KEY
 
 def donation_view(request):
+    stripe_public_key = settings.STRIPE_PUBLIC_KEY
+    stripe_secret_key = settings.STRIPE_SECRET_KEY
+
     if request.method == 'POST':
         form = DonationForm(request.POST)
         if form.is_valid():
@@ -24,8 +26,20 @@ def donation_view(request):
             donation.save()
             return HttpResponseRedirect(reverse('donation_success', args=[donation.order_number]))
     else:
+        stripe_total = round(5 * 100)
+        stripe.api_key = stripe_secret_key
+        intent = stripe.PaymentIntent.create(
+            amount=stripe_total,
+            currency=settings.STRIPE_CURRENCY,
+        )
         form = DonationForm()
-    return render(request, 'donate/donation.html', {'form': form, 'public_key': settings.STRIPE_PUBLIC_KEY})
+    template = 'donate/donation.html'
+    context = {
+        'form': form,
+        'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+        'client_secret': intent.client_secret,
+    }
+    return render(request, template, context)
 
 
 def donation_success(request, order_number):
