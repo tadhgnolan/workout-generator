@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">Add Exercise</div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <form action="{% url 'add_exercise' %}" method="post">
+                {% csrf_token %}
+                {{ exercise_form.as_p }}
+                <button type="submit" class="btn btn-dark">Add Exercise</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
