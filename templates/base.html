@@ -66,6 +66,7 @@
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_workout' %}" class="dropdown-item">Add Workout</a>
+                            <a href="{% url 'add_exercise' %}" class="dropdown-item">Add Exercise</a>
                             {% endif %}
                             <a href="" class="dropdown-item">Generate</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -74,21 +75,6 @@
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Signup</a>
                             {% endif %}
                         </div>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-                            href="">
-                            <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0">
-                                    {% if grand_total %}
-                                    ${{ grand_total|floatformat:2 }}
-                                    {% else %}
-                                    $0.00
-                                    {% endif %}
-                                </p>
-                            </div>
-                        </a>
                     </li>
                 </ul>
             </div>
