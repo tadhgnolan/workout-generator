@@ -27,10 +27,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get('DEBUG', False)
 
 ALLOWED_HOSTS = [
-    '8000-tadhgnolan-workoutgener-vlwfvzmz5rp.ws-eu108.gitpod.io',
+    '8000-tadhgnolan-workoutgener-vlwfvzmz5rp.ws-eu110.gitpod.io',
     '.herokuapp.com', 'https://workout-generator-43e8f8387f8d.herokuapp.com/', 'localhost'
 ]
 
