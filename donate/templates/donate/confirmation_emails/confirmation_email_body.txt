@@ -5,7 +5,7 @@ This is a confirmation of your donation.
 Donation Number: {{ donation.order_number }}
 Donation Date: {{ donation.date }}
 
-Donation Total: €5.00
+Donation Total: €{{ donation.amount }}
 
 If you have any questions, feel free to contact us at {{ contact_email }}.
 
