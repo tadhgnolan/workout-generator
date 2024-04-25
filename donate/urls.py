@@ -8,4 +8,7 @@ urlpatterns = [
         views.donation_success,
         name='donation_success'
     ),
+    path('cache_donate_data/',
+         views.cache_donate_data,
+         name='cache_donate_data'),
 ]
