@@ -66,7 +66,7 @@ form.addEventListener('submit', function (ev) {
         'csrfmiddlewaretoken': csrfToken,
         'client_secret': clientSecret,
     };
-    var url = '/donate/cache_donate_data/';
+    var url = '/donation_view/cache_donate_data/';
 
     $.post(url, postData).done(function () {
         stripe.confirmCardPayment(clientSecret, {
@@ -92,7 +92,7 @@ form.addEventListener('submit', function (ev) {
                 }
             }
         });
-    }).fail(function () {
+    }).fail(function (e) {
         // just reload the page, the error will be in django messages
         location.reload();
     });
