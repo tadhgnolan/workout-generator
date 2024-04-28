@@ -36,28 +36,41 @@ def cache_donate_data(request):
 def donation_view(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
+    stripe_currency = settings.STRIPE_CURRENCY
 
     if request.method == 'POST':
         form = DonationForm(request.POST)
         if form.is_valid():
             donation = form.save(commit=False)
+            donation_amount = int(float(request.POST.get('amount')) * 100)
             pid = request.POST.get('client_secret').split('_secret')[0]
             donation.stripe_product_id = pid
             donation.save()
+
+            # update the PaymentIntent
+            stripe.api_key = stripe_secret_key
+            intent = stripe.PaymentIntent.create(
+                amount=donation_amount,
+                currency=stripe_currency,
+            )
+
             return HttpResponseRedirect(reverse('donation_success', args=[donation.order_number]))
+        else:
+            messages.error(request, form.errors)
     else:
-        stripe_total = round(5 * 100)  # TODO: this shouldn't be 5 * 100 (it should be the amount the user donates)
+        stripe_total = round(5 * 100)
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
             amount=stripe_total,
-            currency=settings.STRIPE_CURRENCY,
+            currency=stripe_currency,
         )
         form = DonationForm()
+
     template = 'donate/donation.html'
     context = {
         'form': form,
-        'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
-        'client_secret': intent.client_secret,
+        'stripe_public_key': stripe_public_key,
+        'client_secret': intent.client_secret if intent else None,
     }
     return render(request, template, context)
 
