@@ -52,11 +52,11 @@ var form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function (ev) {
     ev.preventDefault();
-    console.log("starting the Stripe payment");
-    card.update({
-        'disabled': true
-    });
+
+    // Disable the card input and submit button to prevent multiple submissions
+    card.update({ 'disabled': true });
     $('#submit-button').attr('disabled', true);
+    // Show loading overlay
     $('#payment-form').fadeToggle(100);
     $('#loading-overlay').fadeToggle(100);
 
@@ -75,19 +75,26 @@ form.addEventListener('submit', function (ev) {
             },
         }).then(function (result) {
             if (result.error) {
+                // Show error to your customer (e.g., insufficient funds)
                 var errorDiv = document.getElementById('card-errors');
                 var html = `
                     <span class="icon" role="alert">
-                    <i class="fas fa-times"></i>
+                        <i class="fas fa-times"></i>
                     </span>
                     <span>${result.error.message}</span>`;
                 $(errorDiv).html(html);
+
+                // Hide loading overlay
                 $('#payment-form').fadeToggle(100);
                 $('#loading-overlay').fadeToggle(100);
+
+                // Re-enable the card input and submit button
                 card.update({ 'disabled': false });
                 $('#submit-button').attr('disabled', false);
             } else {
+                // The payment has been processed!
                 if (result.paymentIntent.status === 'succeeded') {
+                    // Submit the form normally
                     form.submit();
                 }
             }
