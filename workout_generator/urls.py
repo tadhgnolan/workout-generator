@@ -25,7 +25,7 @@ urlpatterns = [
     path('', include('home.urls')),
     path('generator/', include('generator.urls')),
     path('donation_view/', include('donate.urls')),
-    path('signup/', include('newsletter.urls')),
+    path('newsletter/', include('newsletter.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'workout_generator.views.handler404'
