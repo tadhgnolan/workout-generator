@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
+            <h2>
+                Newsletter
+            </h2>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3>
+                Sign up to our monthly newsletter to find out when we have new workouts and exercises available!
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form action="{% url 'newsletter' %}" method="post">
+                {% csrf_token %}
+                {{ newsletter_form.as_p }}
+                <button type="submit" class="btn btn-success">Sign Up</button>
+                <br>
+                <small class="text-danger">
+                    Your email is secure and will never be sold to third-parties.
+                </small>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
