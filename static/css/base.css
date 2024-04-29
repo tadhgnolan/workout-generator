@@ -4,9 +4,8 @@ body {
 }
 
 body {
-    background: url('../../media/homepage_background_cropped.jpg') no-repeat center center fixed;
-    background-repeat: repeat;
-    background-size: 40%;
+    background-color: #FFFDD0;
+    background-size: 100%;
     color: #555;
     font-family: 'Lato';
 }
@@ -38,8 +37,8 @@ main {
 }
 
 .donate-button {
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background: #222222;
+    color: #FFFDD0;
     min-width: 260px;
 }
 
@@ -54,7 +53,7 @@ main {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222222;
+    background: #0000FF;
     color: white;
 }
 
