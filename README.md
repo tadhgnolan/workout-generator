@@ -1,6 +1,8 @@
 # [WORKOUT GENERATOR](https://workout-generator-43e8f8387f8d.herokuapp.com)
 
-*Website not fully functional. Contains unresolved pathing errors*
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/tadhgnolan/workout-generator)](https://github.com/tadhgnolan/workout-generator/commits/main)
+[![GitHub last commit](https://img.shields.io/github/last-commit/tadhgnolan/workout-generator)](https://github.com/tadhgnolan/workout-generator/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/tadhgnolan/workout-generator)](https://github.com/tadhgnolan/workout-generator)
 
 ### Future Features
 
