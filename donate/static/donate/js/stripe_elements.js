@@ -50,7 +50,7 @@ card.addEventListener('change', function (event) {
 // Handle form submit
 var form = document.getElementById('payment-form');
 
-$("#amount").attr("min", "1");
+$("#id_amount").attr("min", "1");
 
 form.addEventListener('submit', function (ev) {
     ev.preventDefault();
