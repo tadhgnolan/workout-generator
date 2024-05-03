@@ -429,6 +429,17 @@ I've created a placeholder Facebook business account at
 
 ![screenshot](documentation/placeholder-facebook.png)
 
+#### External Links
+
+For pages that open in a new tab, I've used the `target="_blank"` and `rel="nofollow noreferrer"` attributes.
+
+- View Wiki Page for Workout
+
+```html
+<!-- external link to wiki page -->
+<a href="{{ exercise.wiki_link }}" target="_blank" rel="nofollow noreferrer" class="btn btn-light m-1">View Exercise</a>
+```
+
 ### Newsletter Marketing
 
 I have incorporated a newsletter sign-up form on my application made using a custom Django model, to allow users to supply their
