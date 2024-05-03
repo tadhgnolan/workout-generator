@@ -254,18 +254,59 @@ class Donation(models.Model):
     date = models.DateTimeField(auto_now_add=True)
 ```
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
+### Generator App
 
-A couple recommendations for building free ERDs:
-- [Draw.io](https://draw.io)
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
+- `Workout` Model
 
-A more comprehensive ERD can be auto-generated once you're
-at the end of your development stages, just before you submit.
-Follow the steps below to obtain a thorough ERD that you can include.
-Feel free to leave the steps in the README for future use to yourself.
+```python
+class Workout(models.Model):
+    """
+    The body part for the workout: eg: legs, shoulders, arms, back, chest, core
+    """
+    BODY_PARTS = (
+        (0, "legs"),
+        (1, "arms"),
+        (2, "chest"),
+        (3, "shoulders"),
+        (4, "back"),
+    )
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+    name = models.CharField(max_length=75, null=False, blank=False)
+    body_part = models.IntegerField(choices=BODY_PARTS, default=0)
+```
+
+- `Exercise` Model
+
+```python
+class Exercise(models.Model):
+    """
+    The exercise that would be generated at random each time.
+    """
+    workout = models.ForeignKey(Workout, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100, null=False, blank=False)
+    wiki_link = models.URLField(max_length=256, null=False, blank=False)
+    sets = models.PositiveIntegerField(
+        default=3,
+        validators=[MinValueValidator(3), MaxValueValidator(6)],
+        null=False, blank=False)
+    reps = models.PositiveIntegerField(
+        default=12,
+        validators=[MinValueValidator(12), MaxValueValidator(20)],
+        null=False, blank=False)
+    muscle_focus = models.CharField(max_length=50, null=False, blank=False)
+    description = models.TextField(null=False, blank=False)
+```
+
+### Newsletter App
+
+- `Newsletter` Model
+
+```python
+class Newsletter(models.Model):
+    email = models.EmailField(max_length=256, null=False, blank=False)
+```
+
+### ERD
 
 I have used `pygraphviz` and `django-extensions` to auto-generate an ERD.
 
