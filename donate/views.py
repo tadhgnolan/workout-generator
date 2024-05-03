@@ -54,7 +54,8 @@ def donation_view(request):
                 currency=stripe_currency,
             )
 
-            return HttpResponseRedirect(reverse('donation_success', args=[donation.order_number]))
+            return HttpResponseRedirect(
+                reverse('donation_success', args=[donation.order_number]))
         else:
             messages.error(request, form.errors)
     else:
@@ -87,7 +88,7 @@ def donation_success(request, order_number):
         f'Your donation order number is {order.order_number}. '
         f'A confirmation email will be sent to {order.email}.'
     )
-    
+
     customer_email = order.email
     contact_email = settings.DEFAULT_FROM_EMAIL
     subject = "Workout Generator Donation Confirmation"

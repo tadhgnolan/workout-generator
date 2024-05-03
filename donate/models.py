@@ -5,8 +5,8 @@ from django.db import models
 class Donation(models.Model):
     order_number = models.CharField(max_length=2555, unique=True)
     email = models.EmailField(max_length=254, null=False, blank=False)
-    amount = models.DecimalField(max_digits=6, decimal_places=2, default=5.00) # €5 fixed amount
-    stripe_product_id = models.CharField(max_length=255, unique=True) # Store Stripe Product ID
+    amount = models.DecimalField(max_digits=6, decimal_places=2, default=5.00)
+    stripe_product_id = models.CharField(max_length=255, unique=True)
     date = models.DateTimeField(auto_now_add=True)
 
     def _generate_order_number(self):
@@ -14,7 +14,7 @@ class Donation(models.Model):
         Generate a random, unique order number using UUID
         """
         return uuid.uuid4().hex.upper()
-    
+
     def save(self, *args, **kwargs):
         """
         Override the original save method to set the order number
