@@ -56,7 +56,7 @@
                 <!-- card-footer -->
                 <div class="card-footer text-center bg-secondary text-light">
                     <!-- external link to wiki page -->
-                    <a href="{{ exercise.wiki_link }}" target="_blank" rel="nofollow noreferred"
+                    <a href="{{ exercise.wiki_link }}" target="_blank" rel="nofollow noreferrer"
                         class="btn btn-light m-1">View Exercise</a>
                     {% if request.user.is_superuser %}
                     <a href="{% url 'edit_workout' exercise.workout.id %}" class="btn btn-light m-1">Edit Workout</a>
