@@ -181,11 +181,11 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 ![screenshot](documentation/features/feature05.2.png)
 ![screenshot](documentation/features/feature05.3.png)
 
-- **YOUR-TITLE-FOR-FEATURE-#6**
+- **404 Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - In case the user somehow navigates to a broken/missing page, there is a 404 page.
 
-![screenshot](documentation/features/feature06.0.png)
+![screenshot](documentation/features/404.png)
 
 - **YOUR-TITLE-FOR-FEATURE-#7**
 
