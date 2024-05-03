@@ -432,8 +432,14 @@ I've created a placeholder Facebook business account at
 ### Newsletter Marketing
 
 I have incorporated a newsletter sign-up form on my application made using a custom Django model, to allow users to supply their
-email address if they are interested in learning more. 
+email address if they are interested in learning more.
 
+- `Newsletter` Model
+
+```python
+class Newsletter(models.Model):
+    email = models.EmailField(max_length=256, null=False, blank=False)
+```
 
 
 ## Testing
