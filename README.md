@@ -84,8 +84,8 @@ Contact
 
 ### Tablet Wireframes
 
-< details >
-< summary > Click here to see the Tablet Wireframes < / summary >
+<details>
+<summary> Click here to see the Tablet Wireframes </summary>
 
 Home
   - ![screenshot](documentation/wireframes/tablet-home.png)
@@ -102,12 +102,12 @@ Gallery
 etc.
   - repeat for any remaining tablet wireframes
 
-< / details >
+</details>
 
 ### Desktop Wireframes
 
-< details >
-< summary > Click here to see the Desktop Wireframes < / summary >
+<details>
+<summary> Click here to see the Desktop Wireframes </summary>
 
 Home
   - ![screenshot](documentation/wireframes/desktop-home.png)
@@ -124,7 +124,7 @@ Gallery
 etc.
   - repeat for any remaining desktop wireframes
 
-< / details >
+</details>
 
 ## Features
 
@@ -442,14 +442,24 @@ class Newsletter(models.Model):
 ```
 
 
-## Testing
-
-> [!NOTE]  
-> For all testing, please refer to the [TESTING.md](TESTING.md) file.
-
 ## Deployment
 
 The live deployed application can be found deployed on [Heroku](https://workout-generator-43e8f8387f8d.herokuapp.com).
+
+### Whitenoise
+
+This project uses WhiteNoise to handle static files for the deployed site on Heroku. There aren't any requirements for user-uploaded files/images, so it wasn't necessary to use something like AWS-S3 or Cloudinary.
+
+- `pip3 install whitenoise`
+
+`settings.py`
+```python
+MIDDLEWARE = [
+    ...
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    ...
+]
+```
 
 ### PostgreSQL Database
 
