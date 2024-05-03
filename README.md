@@ -351,13 +351,9 @@ There, I used my own **User Story Template** to manage user stories.
 It also helped with milestone iterations on a weekly basis.
 
 
-- [Open Issues](https://github.com/tadhgnolan/workout-generator/issues) [![GitHub issues](https://img.shields.io/github/issues/tadhgnolan/workout-generator)](https://github.com/tadhgnolan/workout-generator/issues)
+- [![GitHub issues](https://img.shields.io/github/issues/tadhgnolan/workout-generator)](https://github.com/tadhgnolan/workout-generator/issues)
 
-    ![screenshot](documentation/gh-issues-open.png)
-
-- [Closed Issues](https://github.com/tadhgnolan/workout-generator/issues?q=is%3Aissue+is%3Aclosed) [![GitHub closed issues](https://img.shields.io/github/issues-closed/tadhgnolan/workout-generator)](https://github.com/tadhgnolan/workout-generator/issues?q=is%3Aissue+is%3Aclosed)
-
-    ![screenshot](documentation/gh-issues-closed.png)
+- [![GitHub closed issues](https://img.shields.io/github/issues-closed/tadhgnolan/workout-generator)](https://github.com/tadhgnolan/workout-generator/issues?q=is%3Aissue+is%3Aclosed)
 
 ### MoSCoW Prioritization
 
