@@ -4,20 +4,290 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/tadhgnolan/workout-generator)](https://github.com/tadhgnolan/workout-generator/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/tadhgnolan/workout-generator)](https://github.com/tadhgnolan/workout-generator)
 
+---
+Workout Generator is a bodybuilding/aesthetic focused physical fitness app designed to give experienced users a randomly generated workout to make the process of exercise selection for each training cycle easier. 
+
+Progressive overload is a core principle of bodybuilding and many other forms of physical training. In layman's terms an individual will adapt to any form of consistent training over time, therefore it’s necessary to adjust training variables such as load (weight), volume (work done) & exercise selection periodically, in some cases every 6 - 8 weeks.
+
+This app aims to simplify that process by randomly selecting exercises for each muscle group from a database for the user.
+
+
+![screenshot](documentation/mockup.png)
+
+source: [amiresponsive](https://ui.dev/amiresponsive?url=https://workout-generator-43e8f8387f8d.herokuapp.com)
+
+## UX
+An Agile methodology was used in planning the project utilising Github's Project 
+kanban. Issues were used to create user stories. When work began on a user story, it was moved to the "In Progress" column. When the task is complete, it is marked as closed. Labels were used to mark priority of issue. Milestones were used to set major project objectives. A column named “Could Have” is used for prospective features for the website and for any features that were not complete by the project deadline.
+
+### Colour Scheme
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
+
+Explain your colours and the colour scheme.
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
+- `#000000` used for primary text.
+- `#E84610` used for primary highlights.
+- `#4A4A4F` used for secondary text.
+- `#009FE3` used for secondary highlights.
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
+
+Consider adding a link and screenshot for your colour scheme using "coolors".
+https://coolors.co/generate
+
+When you add a colour to the palette, the URL is dynamically updated, making it easier for you to return back to your colour palette later if needed.
+
+Example:
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
+I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
+
+![screenshot](documentation/coolors.png)
+
+### Typography
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
+
+Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
+
+Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
+
+Example:
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
+- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
+
+- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+
+- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
+
+## User Stories
+
+### New Site Users
+
+- As a new site user, I would like to register, so that I can create an account. [#1](https://github.com/tadhgnolan/workout-generator/issues/1)
+- As a new site user, I would like to easily navigate the site using the navbar or get back to the home page by clicking the logo.
+- As a new site user, I would like to input my fitness level (beginner, intermediate, advanced), so that the site can generate workouts suitable for me.
+- As a new site user, I would like to specify the equipment I have available (resistance bands, dumbbells, machines etc.), so that the app can generate workouts suitable for what I have available.
+- As a new site user, I would like to be able to substitute exercises, so that I can replace any that are not suitable for me.
+- As a new site user, I would like to be able to donate to the site, so that I can show my support & they can provide a better service.
+
+
+### Returning Site Users
+
+- As a returning site user, I would like to log into my account.
+- As a returning site user, I would like to see a list of new features, so that I can try them out.
+- As a returning site user, I would like to track my progress (workouts completed etc.) over time, so that I can see how I have improved.
+- As a returning site user, I would like to view my workout history, so that I can see what workouts I've done in the past.
+- As a returning site user, I would like to be able to provide feedback on the workout an the app, so that it can be improved over time based on my experience.
+
+### Site Admin
+
+- As a site administrator, I should be able to log into the admin panel using my credentials, so that I can manage the application. 
+- As a site administrator, I should be able to be able to view all user accounts, so that I can monitor user activity.
+- As a site administrator, I should be able to deactivate or activate user accounts, so that I can manage user access to advamced features of the app.
+- As a site administrator, I should be able to add, edit and delete exercises in the database, so that I can manage the exercises available to users. 
+- As a site administrator, I should be able to able to view user progress and statistics, so that I can understand user engagement and app effectiveness.
+- As a site administrator, I should be able to view and manage user feedback, so that I can improve the app based on user suggestions.
+
+## Wireframes
+
+To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
+I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+
+### Mobile Wireframes
+
+<details>
+<summary> Click here to see the Mobile Wireframes </summary>
+
+Home
+  - ![screenshot](documentation/wireframes/mobile-home.png)
+
+Workouts
+  - ![screenshot](documentation/wireframes/mobile-workouts.png)
+
+Contact
+  - ![screenshot](documentation/wireframes/mobile-contact.png)
+
+</details>
+
+### Tablet Wireframes
+
+< details >
+< summary > Click here to see the Tablet Wireframes < / summary >
+
+Home
+  - ![screenshot](documentation/wireframes/tablet-home.png)
+
+About
+  - ![screenshot](documentation/wireframes/tablet-about.png)
+
+Contact
+  - ![screenshot](documentation/wireframes/tablet-contact.png)
+
+Gallery
+  - ![screenshot](documentation/wireframes/tablet-gallery.png)
+
+etc.
+  - repeat for any remaining tablet wireframes
+
+< / details >
+
+### Desktop Wireframes
+
+< details >
+< summary > Click here to see the Desktop Wireframes < / summary >
+
+Home
+  - ![screenshot](documentation/wireframes/desktop-home.png)
+
+About
+  - ![screenshot](documentation/wireframes/desktop-about.png)
+
+Contact
+  - ![screenshot](documentation/wireframes/desktop-contact.png)
+
+Gallery
+  - ![screenshot](documentation/wireframes/desktop-gallery.png)
+
+etc.
+  - repeat for any remaining desktop wireframes
+
+< / details >
+
+## Features
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
+
+In this section, you should go over the different parts of your project,
+and describe each in a sentence or so.
+
+You will need to explain what value each of the features provides for the user,
+focusing on who this website is for, what it is that they want to achieve,
+and how your project is the best way to help them achieve these things.
+
+For some/all of your features, you may choose to reference the specific project files that implement them.
+
+IMPORTANT: Remember to always include a screenshot of each individual feature!
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
+### Existing Features
+
+- **Registration Page**
+
+    - Allows new users to register an account with username and password.
+
+![screenshot](documentation/features/feature01.png)
+
+- **Login Page**
+
+    - Registered user can login.
+
+![screenshot](documentation/features/feature02.png)
+
+- **Home Page**
+
+    - Users can read an introduction, click on a donation button and access the rest of the website through the navbar
+
+![screenshot](documentation/features/feature03.png)
+
+- **Add Workout/Exercise**
+
+    - Admin users can add workouts and exercises to the database.
+
+![screenshot](documentation/features/feature04.0.png)
+![screenshot](documentation/features/feature04.1.png)
+![screenshot](documentation/features/feature04.2.png)
+![screenshot](documentation/features/feature04.3.png)
+
+- **Edit Workout/Exercise**
+
+    - Admin users can edit workouts and exercises in the database.
+
+![screenshot](documentation/features/feature05.0.png)
+![screenshot](documentation/features/feature05.1.png)
+![screenshot](documentation/features/feature05.2.png)
+![screenshot](documentation/features/feature05.3.png)
+
+- **YOUR-TITLE-FOR-FEATURE-#6**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature06.0.png)
+
+- **YOUR-TITLE-FOR-FEATURE-#7**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/features/feature07.0.png)
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
+
+Repeat as necessary for as many features as your site contains.
+
+Hint: the more, the merrier!
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
 ### Future Features
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
+
+Do you have additional ideas that you'd like to include on your project in the future?
+Fantastic! List them here!
+It's always great to have plans for future improvements!
+Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
+- YOUR-TITLE-FOR-FUTURE-FEATURE-#1
+    - Any additional notes about this feature.
+- YOUR-TITLE-FOR-FUTURE-FEATURE-#2
+    - Any additional notes about this feature.
+- YOUR-TITLE-FOR-FUTURE-FEATURE-#3
+    - Any additional notes about this feature.
 
 ## Tools & Technologies Used
 
-| Source | Location | Notes |
-| --- | --- | --- |
-| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
+
+- [![Markdown Builder](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
+- [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [![GitHub](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) used for secure online code storage.
+- [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) used as a cloud-based IDE for development.
+- [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+- [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) used for user interaction on the site.
+- [![jQuery](https://img.shields.io/badge/jQuery-grey?logo=jquery&logoColor=0769AD)](https://jquery.com) used for user interaction on the site.
+- [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org) used as the back-end programming language.
+- [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
+- [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) used as the Python framework for the site.
+- [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?logo=postgresql&logoColor=4169E1)](https://www.postgresql.org) used as the relational database management.
+- [![PostgreSQL by Code Institute](https://img.shields.io/badge/PostgreSQL_by_Code_Institute-grey?logo=okta&logoColor=F05223)](https://dbs.ci-dbs.net) used as the Postgres database from Code Institute.
+- [![WhiteNoise](https://img.shields.io/badge/WhiteNoise-grey?logo=python&logoColor=FFFFFF)](https://whitenoise.readthedocs.io) used for serving static files with Heroku.
+- [![Stripe](https://img.shields.io/badge/Stripe-grey?logo=stripe&logoColor=008CDD)](https://stripe.com) used for online secure payments of ecommerce products/services.
+- [![MailChimp](https://img.shields.io/badge/MailChimp-grey?logo=mailchimp&logoColor=FFE01B)](https://mailchimp.com) used for sending newsletter subscriptions.
+- [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) used for creating wireframes.
+- [![Leaflet](https://img.shields.io/badge/Leaflet-grey?logo=leaflet&logoColor=199900)](https://leafletjs.com) used as a free open-source interactive map on my site.
+- [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
+- [![ChatGPT](https://img.shields.io/badge/ChatGPT-grey?logo=chromatic&logoColor=75A99C)](https://chat.openai.com) used to help debug, troubleshoot, and explain things.
 
 ## Database Design
+
+Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
+Understanding the relationships between different tables can save time later in the project.
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
+
+Using your defined models (one example below), create an ERD with the relationships identified.
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ```python
 class Product(models.Model):
@@ -37,6 +307,43 @@ class Product(models.Model):
         return self.name
 ```
 
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
+
+A couple recommendations for building free ERDs:
+- [Draw.io](https://draw.io)
+- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
+
+A more comprehensive ERD can be auto-generated once you're
+at the end of your development stages, just before you submit.
+Follow the steps below to obtain a thorough ERD that you can include.
+Feel free to leave the steps in the README for future use to yourself.
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
+I have used `pygraphviz` and `django-extensions` to auto-generate an ERD.
+
+The steps taken were as follows:
+- In the terminal: `sudo apt update`
+- then: `sudo apt-get install python3-dev graphviz libgraphviz-dev pkg-config`
+- then type `Y` to proceed
+- then: `pip3 install django-extensions pygraphviz`
+- in my `settings.py` file, I added the following to my `INSTALLED_APPS`:
+```python
+INSTALLED_APPS = [
+    ...
+    'django_extensions',
+    ...
+]
+```
+- back in the terminal: `python3 manage.py graph_models -a -o erd.png`
+- dragged the new `erd.png` file into my `documentation/` folder
+- removed `'django_extensions',` from my `INSTALLED_APPS`
+- finally, in the terminal: `pip3 uninstall django-extensions pygraphviz -y`
+
+![erd](documentation/erd.png)
+source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
+
+
 ## Agile Development Process
 
 ### GitHub Projects
@@ -46,7 +353,33 @@ It isn't a specialized tool, but with the right tags and project creation/issue 
 
 Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
 
+![screenshot](documentation/gh-projects.png)
+
 ### GitHub Issues
+
+[GitHub Issues](https://github.com/tadhgnolan/workout-generator/issues) served as an another Agile tool.
+There, I used my own **User Story Template** to manage user stories.
+
+It also helped with milestone iterations on a weekly basis.
+
+
+- [Open Issues](https://github.com/tadhgnolan/workout-generator/issues) [![GitHub issues](https://img.shields.io/github/issues/tadhgnolan/workout-generator)](https://github.com/tadhgnolan/workout-generator/issues)
+
+    ![screenshot](documentation/gh-issues-open.png)
+
+- [Closed Issues](https://github.com/tadhgnolan/workout-generator/issues?q=is%3Aissue+is%3Aclosed) [![GitHub closed issues](https://img.shields.io/github/issues-closed/tadhgnolan/workout-generator)](https://github.com/tadhgnolan/workout-generator/issues?q=is%3Aissue+is%3Aclosed)
+
+    ![screenshot](documentation/gh-issues-closed.png)
+
+### MoSCoW Prioritization
+
+I've decomposed my Epics into stories prior to prioritizing and implementing them.
+Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
+
+- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
+- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
+- **Could Have**: has small impact if left out (*20% of stories*)
+- **Won't Have**: not a priority for this iteration
 
 ## Ecommerce Business Model
 
@@ -54,7 +387,10 @@ This site sells goods to individual customers, and therefore follows a `Business
 It is of the simplest **B2C** forms, as it focuses on individual transactions, and doesn't need anything
 such as monthly/annual subscriptions.
 
-It is still in its early development stages, although it already has a newsletter.
+It is still in its early development stages, although it already has a newsletter, and links for social media marketing.
+
+Social media can potentially build a community of users around the business, and boost site visitor numbers,
+especially when using larger platforms such a Facebook.
 
 A newsletter list can be used by the business to send regular messages to site users.
 For example, what items are on special offer, new items in stock,
@@ -62,28 +398,84 @@ updates to business hours, notifications of events, and much more!
 
 ## Search Engine Optimization (SEO) & Social Media Marketing
 
+### Keywords
+
+I've identified some appropriate keywords to align with my site, that should help users
+when searching online to find my page easily from a search engine.
+This included a series of the following keyword types
+
+- Short-tail (head terms) keywords
+- Long-tail keywords
+
+I also played around with [Word Tracker](https://www.wordtracker.com) a bit
+to check the frequency of some of my site's primary keywords (only until the free trial expired).
+
+### Sitemap
+
+I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
+This was generated using my deployed site URL: https://workout-generator-43e8f8387f8d.herokuapp.com
+
+After it finished crawling the entire site, it created a
+[sitemap.xml](sitemap.xml) which I've downloaded and included in the repository.
+
+### Robots
+
+I've created the [robots.txt](robots.txt) file at the root-level.
+Inside, I've included the default settings:
+
+```
+User-agent: *
+Disallow:
+Sitemap: https://workout-generator-43e8f8387f8d.herokuapp.com/sitemap.xml
+```
+
+Further links for future implementation:
+- [Google search console](https://search.google.com/search-console)
+- [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
+- [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
+- [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
+
+### Social Media Marketing
+
+Creating a strong social base (with participation) and linking that to the business site can help drive sales.
+Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
+
+I've created a placeholder Facebook business account at
+[Facebook](https://www.facebook.com/profile.php?id=61559076988919).
+
+![screenshot](documentation/placeholder-facebook.png)
+
 ### Newsletter Marketing
 
-I have incorporate a newsletter sign-up form on my application, to allow users to supply their
+I have incorporated a newsletter sign-up form on my application made using a custom Django model, to allow users to supply their
 email address if they are interested in learning more. 
+
 
 
 ## Testing
 
+> [!NOTE]  
+> For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
+## Deployment
+
 The live deployed application can be found deployed on [Heroku](https://workout-generator-43e8f8387f8d.herokuapp.com).
 
-### ElephantSQL Database
+### PostgreSQL Database
 
-This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
+This project uses a [Code Institute PostgreSQL Database](https://dbs.ci-dbs.net).
 
-To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
+To obtain my own Postgres Database from Code Institute, I followed these steps:
 
-- Click **Create New Instance** to start a new database.
-- Provide a name (this is commonly the name of the project: workout-generator).
-- Select the **Tiny Turtle (Free)** plan.
-- You can leave the **Tags** blank.
-- Select the **Region** and **Data Center** closest to you.
-- Once created, click on the new database name, where you can view the database URL and Password.
+- Signed-in to the CI LMS using my email address.
+- An email was sent to me with my new Postgres Database.
+
+> [!CAUTION]  
+> - PostgreSQL databases by Code Institute are only available to CI Students.
+> - You must acquire your own PostgreSQL database through some other method
+> if you plan to clone/fork this repository.
+> - Code Institute students are allowed a maximum of 8 databases.
+> - Databases are subject to deletion after 18 months.
 
 ### Stripe API
 
@@ -106,28 +498,6 @@ As a backup, in case users prematurely close the purchase-order page during paym
 - You'll have a new key here:
 	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
 
-### Gmail API
-
-This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
-
-Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
-
-- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
-- Click on the **Accounts and Import** tab.
-- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
-- From this new page, select **Security** on the left.
-- Select **2-Step Verification** to turn it on. (verify your password and account)
-- Once verified, select **Turn On** for 2FA.
-- Navigate back to the **Security** page, and you'll see a new option called **App passwords**.
-- This might prompt you once again to confirm your password and account.
-- Select **Mail** for the app type.
-- Select **Other (Custom name)** for the device type.
-	- Any custom name, such as "Django" or workout-generator
-- You'll be provided with a 16-character password (API key).
-	- Save this somewhere locally, as you cannot access this key again later!
-	- `EMAIL_HOST_PASS` = user's 16-character API key
-	- `EMAIL_HOST_USER` = user's own personal Gmail email address
-
 ### Heroku Deployment
 
 This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
@@ -137,6 +507,9 @@ Deployment steps are as follows, after account setup:
 - Select **New** in the top-right corner of your Heroku Dashboard, and select **Create new app** from the dropdown menu.
 - Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select **Create App**.
 - From the new app **Settings**, click **Reveal Config Vars**, and set your environment variables.
+
+> [!IMPORTANT]  
+> This is a sample only; you would replace the values with your own if cloning/forking my repository.
 
 | Key | Value |
 | --- | --- |
@@ -152,10 +525,11 @@ Deployment steps are as follows, after account setup:
 | `STRIPE_WH_SECRET` | user's own value |
 | `USE_AWS` | True |
 
-Heroku needs two additional files in order to deploy properly.
+Heroku needs three additional files in order to deploy properly.
 
 - requirements.txt
 - Procfile
+- runtime.txt
 
 You can install this project's **requirements** (where applicable) using:
 
@@ -169,6 +543,11 @@ The **Procfile** can be created with the following command:
 
 - `echo web: gunicorn app_name.wsgi > Procfile`
 - *replace **app_name** with the name of your primary Django app name; the folder where settings.py is located*
+
+The **runtime.txt** file needs to know which Python version you're using:
+1. type: `python3 --version` in the terminal.
+2. in the **runtime.txt** file, add your Python version:
+	- `python-3.9.18`
 
 For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
 
@@ -195,6 +574,9 @@ For either method, you will need to install any applicable packages found within
 
 You will need to create a new file called `env.py` at the root-level,
 and include the same environment variables listed above from the Heroku deployment steps.
+
+> [!IMPORTANT]  
+> This is a sample only; you would replace the values with your own if cloning/forking my repository.
 
 Sample `env.py` file:
 
@@ -261,12 +643,328 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
+## Credits
+
+### Content
+
+| Source | Location | Notes |
+| --- | --- | --- |
+| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
+| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
+| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
+| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 
 ### Media
 
+| Source | Location | Type | Notes |
+| --- | --- | --- | --- |
+| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+
 ### Acknowledgements
 
-- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
 - I would like to thank my partner Rossana, for believing in me, and allowing me to make this transition into software development.
+- I would like to thank my brother, Cormac Nolan, for providing advice & feeback gained from his own experience as a developer.
+
+# Testing
+
+## Code Validation
+
+
+### HTML
+
+I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| donate | donation.html | ![screenshot](documentation/validation/donation.html.png) | |
+| generator | add_exercise.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| generator | add_workout.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| generator | edit_exercise.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| generator | edit_workout.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| generator | generator.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | newsletter.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| templates | 404.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+
+### CSS
+
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| donate | donate.css | ![screenshot](documentation/validation/donate.css.png) | |
+| static | base.css | ![screenshot](documentation/validation/base.css.png) | |
+
+### JavaScript
+
+I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| donate | stripe_elements.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+
+### Python
+
+I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
+
+| Directory | File | CI URL | Screenshot | Notes |
+| --- | --- | --- | --- | --- |
+| donate | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| donate | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| donate | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| donate | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| donate | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| generator | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| generator | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| generator | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| generator | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| generator | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/home/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/home/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/home/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| home | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/home/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/manage.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| workout_generator | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/workout_generator/settings.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| workout_generator | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/workout_generator/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| workout_generator | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/workout_generator/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+
+## Browser Compatibility
+
+| Browser | Home | About | Contact | etc | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-about.png) | ![screenshot](documentation/browsers/browser-chrome-contact.png) | ![screenshot](documentation/browsers/browser-chrome-etc.png) | Works as expected |
+| Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-about.png) | ![screenshot](documentation/browsers/browser-firefox-contact.png) | ![screenshot](documentation/browsers/browser-firefox-etc.png) | Works as expected |
+| Edge | ![screenshot](documentation/browsers/browser-edge-home.png) | ![screenshot](documentation/browsers/browser-edge-about.png) | ![screenshot](documentation/browsers/browser-chrome-edge.png) | ![screenshot](documentation/browsers/browser-edge-etc.png) | Works as expected |
+| Safari | ![screenshot](documentation/browsers/browser-safari-home.png) | ![screenshot](documentation/browsers/browser-safari-about.png) | ![screenshot](documentation/browsers/browser-safari-contact.png) | ![screenshot](documentation/browsers/browser-safari-etc.png) | Minor CSS differences |
+| Brave | ![screenshot](documentation/browsers/browser-brave-home.png) | ![screenshot](documentation/browsers/browser-brave-about.png) | ![screenshot](documentation/browsers/browser-brave-contact.png) | ![screenshot](documentation/browsers/browser-brave-etc.png) | Works as expected |
+| Opera | ![screenshot](documentation/browsers/browser-opera-home.png) | ![screenshot](documentation/browsers/browser-opera-about.png) | ![screenshot](documentation/browsers/browser-opera-contact.png) | ![screenshot](documentation/browsers/browser-opera-etc.png) | Minor differences |
+| repeat for any other tested browsers | x | x | x | x | x |
+
+## Responsiveness
+
+I've tested my deployed project on multiple devices to check for responsiveness issues.
+
+| Device | Home | About | Contact | etc | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Mobile (DevTools) | ![screenshot](documentation/responsiveness/responsive-mobile-home.png) | ![screenshot](documentation/responsiveness/responsive-mobile-about.png) | ![screenshot](documentation/responsiveness/responsive-mobile-contact.png) | ![screenshot](documentation/responsiveness/responsive-mobile-etc.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet-home.png) | ![screenshot](documentation/responsiveness/responsive-tablet-about.png) | ![screenshot](documentation/responsiveness/responsive-tablet-contact.png) | ![screenshot](documentation/responsiveness/responsive-tablet-etc.png) | Works as expected |
+| Desktop | ![screenshot](documentation/responsiveness/responsive-desktop-home.png) | ![screenshot](documentation/responsiveness/responsive-desktop-about.png) | ![screenshot](documentation/responsiveness/responsive-desktop-contact.png) | ![screenshot](documentation/responsiveness/responsive-desktop-etc.png) | Works as expected |
+| XL Monitor | ![screenshot](documentation/responsiveness/responsive-xl-home.png) | ![screenshot](documentation/responsiveness/responsive-xl-about.png) | ![screenshot](documentation/responsiveness/responsive-xl-contact.png) | ![screenshot](documentation/responsiveness/responsive-xl-etc.png) | Scaling starts to have minor issues |
+| 1440P Monitor | ![screenshot](documentation/responsiveness/responsive-4k-home.png) | ![screenshot](documentation/responsiveness/responsive-4k-about.png) | ![screenshot](documentation/responsiveness/responsive-4k-contact.png) | ![screenshot](documentation/responsiveness/responsive-4k-etc.png) | Noticeable scaling issues |
+| Google Pixel 7  | ![screenshot](documentation/responsiveness/responsive-pixel-home.png) | ![screenshot](documentation/responsiveness/responsive-pixel-about.png) | ![screenshot](documentation/responsiveness/responsive-pixel-contact.png) | ![screenshot](documentation/responsiveness/responsive-pixel-etc.png) | Works as expected |
+
+## Lighthouse Audit
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+| Page | Mobile | Desktop | Notes |
+| --- | --- | --- | --- |
+| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
+| Workouts | ![screenshot](documentation/lighthouse/lighthouse-workouts-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | Some minor warnings |
+| Donate | ![screenshot](documentation/lighthouse/lighthouse-donate-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-donate-desktop.png) | Slow response time due to large images |
+| Newsletter | ![screenshot](documentation/lighthouse/lighthouse-newsletter-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-newsletter-desktop.png) | Slow response time due to large images |
+
+## Defensive Programming
+
+
+Defensive programming was manually tested with the below user acceptance testing:
+
+| Page | Expectation | Test | Result | Fix | Screenshot |
+| --- | --- | --- | --- | --- | --- |
+| Home | | | | | |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature02.png) |
+| About | | | | | |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature04.png) |
+| Gallery | | | | | |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature05.png) |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature06.png) |
+| Contact | | | | | |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature07.png) |
+| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature08.png) |
+| repeat for all remaining pages | x | x | x | x | x |
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+
+Another way of performing defensive testing is a simple Pass/Fail for each test.
+The assessors prefer the above method, with the full test explained, but this is also acceptable in most cases.
+
+When in doubt, use the above method instead, and delete the table below.
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
+| Page | User Action | Expected Result | Pass/Fail | Comments |
+| --- | --- | --- | --- | --- |
+| Home | | | | |
+| | Click on Logo | Redirection to Home page | Pass | |
+| | Click on Home link in navbar | Redirection to Home page | Pass | |
+| Gallery | | | | |
+| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
+| | Load gallery images | All images load as expected | Pass | |
+| Contact | | | | |
+| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
+| | Enter first/last name | Field will accept freeform text | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Enter message in textarea | Field will accept freeform text | Pass | |
+| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
+| Sign Up | | | | |
+| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Enter valid password (twice) | Field will only accept password format | Pass | |
+| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
+| | Confirm email | Redirects user to blank Sign In page | Pass | |
+| Log In | | | | |
+| | Click on the Login link | Redirection to Login page | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Enter valid password | Field will only accept password format | Pass | |
+| | Click Login button | Redirects user to home page | Pass | |
+| Log Out | | | | |
+| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
+| | Click Confirm Logout button | Redirects user to home page | Pass | |
+| Profile | | | | |
+| | Click on Profile button | User will be redirected to the Profile page | Pass | |
+| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
+| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
+| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
+| repeat for all remaining pages | x | x | x | x |
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+
+Repeat for all other tests, as applicable to your own site.
+The aforementioned tests are just an example of a few different project scenarios.
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
+## User Story Testing
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+
+Testing user stories is actually quite simple, once you've already got the stories defined on your README.
+
+Most of your project's **features** should already align with the **user stories**,
+so this should as simple as creating a table with the user story, matching with the re-used screenshot
+from the respective feature.
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
+| User Story | Screenshot |
+| --- | --- |
+| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature01.png) |
+| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature02.png) |
+| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature03.png) |
+| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature04.png) |
+| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature05.png) |
+| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature06.png) |
+| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature07.png) |
+| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature08.png) |
+| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature09.png) |
+| repeat for all remaining user stories | x |
+
+## Bugs
+
+- JS Uncaught ReferenceError: `foobar` is undefined/not defined
+
+    ![screenshot](documentation/bugs/bug01.png)
+
+    - To fix this, I _____________________.
+
+- JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
+
+    ![screenshot](documentation/bugs/bug02.png)
+
+    - To fix this, I _____________________.
+
+- Python `'ModuleNotFoundError'` when trying to import module from imported package
+
+    ![screenshot](documentation/bugs/bug03.png)
+
+    - To fix this, I _____________________.
+
+- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
+
+    ![screenshot](documentation/bugs/bug04.png)
+
+    - To fix this, I _____________________.
+
+- Python `E501 line too long` (93 > 79 characters)
+
+    ![screenshot](documentation/bugs/bug04.png)
+
+    - To fix this, I _____________________.
+
+### GitHub **Issues**
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+
+An improved way to manage bugs is to use the built-in **Issues** tracker on your GitHub repository.
+To access your Issues, click on the "Issues" tab at the top of your repository.
+Alternatively, use this link: https://github.com/tadhgnolan/workout-generator/issues
+
+If using the Issues tracker for your bug management, you can simplify the documentation process.
+Issues allow you to directly paste screenshots into the issue without having to first save the screenshot locally,
+then uploading into your project.
+
+You can add labels to your issues (`bug`), assign yourself as the owner, and add comments/updates as you progress with fixing the issue(s).
+
+Once you've sorted the issue, you should then "Close" it.
+
+When showcasing your bug tracking for assessment, you can use the following format:
+
+🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+
+**Fixed Bugs**
+
+[![GitHub issue custom search](https://img.shields.io/github/issues-search?query=repo%3Atadhgnolan%2Fworkout-generator%20label%3Abug&label=bugs)](https://github.com/tadhgnolan/workout-generator/issues?q=is%3Aissue+is%3Aclosed+label%3Abug)
+
+All previously closed/fixed bugs can be tracked [here](https://github.com/tadhgnolan/workout-generator/issues?q=is%3Aissue+is%3Aclosed).
+
+| Bug | Status |
+| --- | --- |
+| [JS Uncaught ReferenceError: `foobar` is undefined/not defined](https://github.com/tadhgnolan/workout-generator/issues/1) | Closed |
+| [Python `'ModuleNotFoundError'` when trying to import module from imported package](https://github.com/tadhgnolan/workout-generator/issues/2) | Closed |
+| [Django `TemplateDoesNotExist` at /appname/path appname/template_name.html](https://github.com/tadhgnolan/workout-generator/issues/3) | Closed |
+
+**Open Issues**
+
+[![GitHub issues](https://img.shields.io/github/issues/tadhgnolan/workout-generator)](https://github.com/tadhgnolan/workout-generator/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/tadhgnolan/workout-generator)](https://github.com/tadhgnolan/workout-generator/issues?q=is%3Aissue+is%3Aclosed)
+
+Any remaining open issues can be tracked [here](https://github.com/tadhgnolan/workout-generator/issues).
+
+| Bug | Status |
+| --- | --- |
+| [JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).](https://github.com/tadhgnolan/workout-generator/issues/4) | Open |
+| [Python `E501 line too long` (93 > 79 characters)](https://github.com/tadhgnolan/workout-generator/issues/5) | Open |
+
+## Unfixed Bugs
+
+- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
+
+    ![screenshot](documentation/bugs/unfixed-bug01.png)
+
+    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
+
+- For PP3, when using a helper `clear()` function, any text above the height of the terminal does not clear, and remains when you scroll up.
+
+    ![screenshot](documentation/bugs/unfixed-bug02.png)
+
+    - Attempted fix: I tried to adjust the terminal size, but it only resizes the actual terminal, not the allowable area for text.
+
+- When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
+
+    ![screenshot](documentation/bugs/unfixed-bug03.png)
+
+    - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
+
+> [!NOTE]  
+> There are no remaining bugs that I am aware of.
+

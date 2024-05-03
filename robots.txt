@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://workout-generator-43e8f8387f8d.herokuapp.com/sitemap.xml
