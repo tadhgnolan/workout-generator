@@ -243,7 +243,7 @@ Understanding the relationships between different tables can save time later in 
 
 ### Donate App
 
-- `Donate` Model
+- `Donation` Model
 
 ```python
 class Donation(models.Model):
