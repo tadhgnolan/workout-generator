@@ -88,3 +88,9 @@ main {
         padding-top: 164px;
     } */
 }
+
+.badge {
+    white-space: break-spaces;
+    line-height: 2;
+    border-radius: 8px;
+}
