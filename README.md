@@ -697,7 +697,7 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| donate | stripe_elements.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| donate | stripe_elements.js | ![screenshot](documentation/validation/stripe-elements.png) | |
 
 ### Python
 
