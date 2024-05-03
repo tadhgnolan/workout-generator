@@ -509,7 +509,6 @@ Deployment steps are as follows, after account setup:
 | `SECRET_KEY` | user's own value |
 | `STRIPE_PUBLIC_KEY` | user's own value |
 | `STRIPE_SECRET_KEY` | user's own value |
-| `USE_AWS` | True |
 
 Heroku needs three additional files in order to deploy properly.
 
@@ -696,29 +695,27 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| donate | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| donate | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| donate | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| donate | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| donate | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| generator | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| generator | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| generator | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| generator | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| generator | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/home/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/home/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/home/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/home/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/manage.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/admin.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/forms.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/models.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| workout_generator | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/workout_generator/settings.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| workout_generator | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/workout_generator/urls.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| workout_generator | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/workout_generator/views.py) | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| donate | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/admin.py) | ![screenshot](documentation/validation/python/donate-admin.png) | |
+| donate | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/forms.py) | ![screenshot](documentation/validation/python/donate-forms.png) | |
+| donate | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/models.py) | ![screenshot](documentation/validation/python/donate-models.png) | |
+| donate | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/urls.py) | ![screenshot](documentation/validation/python/donate-urls.png) | |
+| donate | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/donate/views.py) | ![screenshot](documentation/validation/python/donate-views.png) | |
+| generator | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/admin.py) | ![screenshot](documentation/validation/python/generator-admin.png) | |
+| generator | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/forms.py) | ![screenshot](documentation/validation/python/generator-forms.png) | |
+| generator | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/models.py) | ![screenshot](documentation/validation/python/generator-models.png) | |
+| generator | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/urls.py) | ![screenshot](documentation/validation/python/generator-urls.png) | |
+| generator | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/generator/views.py) | ![screenshot](documentation/validation/python/generator-views.png) | |
+| home | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/home/urls.py) | ![screenshot](documentation/validation/python/home-urls.png) | |
+| home | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/home/views.py) | ![screenshot](documentation/validation/python/home-views.png) | |
+|  | manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/manage.py) | ![screenshot](documentation/validation/python/manage.png) | |
+| newsletter | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/admin.py) | ![screenshot](documentation/validation/python/newsletter-admin.png) | |
+| newsletter | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/forms.py) | ![screenshot](documentation/validation/python/newsletter-forms.png) | |
+| newsletter | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/models.py) | ![screenshot](documentation/validation/python/newsletter-models.png) | |
+| newsletter | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/urls.py) | ![screenshot](documentation/validation/python/newsletter-urls.png) | |
+| newsletter | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/newsletter/views.py) | ![screenshot](documentation/validation/python/newsletter-views.png) | |
+| workout_generator | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/workout_generator/settings.py) | ![screenshot](documentation/validation/python/workout_generator-settings.png) | |
+| workout_generator | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/workout_generator/urls.py) | ![screenshot](documentation/validation/python/workout_generator-urls.png) | |
+| workout_generator | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tadhgnolan/workout-generator/main/workout_generator/views.py) | ![screenshot](documentation/validation/python/workout_generator-views.png) | |
 
 ## Browser Compatibility
 
