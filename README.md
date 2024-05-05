@@ -678,8 +678,8 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | generator | edit_exercise.html | ![screenshot](documentation/validation/edit_exercise.html.png) | |
 | generator | edit_workout.html | ![screenshot](documentation/validation/edit_workout.html.png) | |
 | generator | generator.html | ![screenshot](documentation/validation/generator.html.png) | |
-| home | index.html | ![screenshot](documentation/validation/home.html.png.png) | |
-| newsletter | newsletter.html | ![screenshot](documentation/validation/newsletter.html.png.png) | |
+| home | index.html | ![screenshot](documentation/validation/home.html.png) | |
+| newsletter | newsletter.html | ![screenshot](documentation/validation/newsletter.html.png) | |
 
 ### CSS
 
