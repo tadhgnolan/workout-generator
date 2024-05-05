@@ -730,7 +730,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | Browser | Home | Workouts | Donate | Newsletter | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-workouts.png) | ![screenshot](documentation/browsers/browser-chrome-donate.png) | ![screenshot](documentation/browsers/browser-chrome-newsletter.png) | Works as expected |
+| Chrome | ![screenshot](documentation/validation/browsers/browser-chrome-home.png) | ![screenshot](documentation/validation/browsers/browser-chrome-workouts.png) | ![screenshot](documentation/validation/browsers/browser-chrome-donate.png) | ![screenshot](documentation/validation/browsers/browser-chrome-newsletter.png) | Works as expected |
 | Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-workouts.png) | ![screenshot](documentation/browsers/browser-firefox-donate.png) | ![screenshot](documentation/browsers/browser-firefox-newsletter.png) | Works as expected |
 | Safari | ![screenshot](documentation/browsers/browser-safari-home.png) | ![screenshot](documentation/browsers/browser-safari-workouts.png) | ![screenshot](documentation/browsers/browser-safari-donate.png) | ![screenshot](documentation/browsers/browser-safari-newsletter.png) | Minor CSS differences |
 
