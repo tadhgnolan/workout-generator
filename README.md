@@ -78,7 +78,7 @@ Workouts
   - ![screenshot](documentation/wireframes/mobile-workouts.png)
 
 Contact
-  - ![screenshot](documentation/wireframes/mobile-contact.png)
+  - ![screenshot](documentation/wireframes/mobile-newsletter.png)
 
 </details>
 
@@ -88,19 +88,13 @@ Contact
 <summary> Click here to see the Tablet Wireframes </summary>
 
 Home
-  - ![screenshot](documentation/wireframes/tablet-home.png)
-
-About
-  - ![screenshot](documentation/wireframes/tablet-about.png)
+  - ![screenshot](documentation/wireframes/ipad-home.png)
 
 Contact
-  - ![screenshot](documentation/wireframes/tablet-contact.png)
+  - ![screenshot](documentation/wireframes/ipad-workouts.png)
 
 Gallery
-  - ![screenshot](documentation/wireframes/tablet-gallery.png)
-
-etc.
-  - repeat for any remaining tablet wireframes
+  - ![screenshot](documentation/wireframes/ipad-newsletter.png)
 
 </details>
 
