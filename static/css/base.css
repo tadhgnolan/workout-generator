@@ -36,6 +36,17 @@ main {
     width: fit-content;
 }
 
+.workouts-button {
+    background: #222222;
+    color: #FFFDD0;
+    min-width: 260px;
+
+}
+
+.donate-button:hover,
+.donate-button:active,
+.donate-button:focus,
+
 .donate-button {
     background: #222222;
     color: #FFFDD0;
