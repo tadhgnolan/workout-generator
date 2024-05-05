@@ -412,7 +412,7 @@ Further links for future implementation:
 Creating a strong social base (with participation) and linking that to the business site can help drive sales.
 Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
 
-I've created a placeholder Facebook business account at
+I've created a placeholder Facebook business account on
 [Facebook](https://www.facebook.com/profile.php?id=61559076988919).
 
 ![screenshot](documentation/placeholder-facebook.png)
@@ -658,7 +658,7 @@ There are no major differences between the local (Gitpod) version and the live d
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
 - I would like to thank my partner Rossana, for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my brother, Cormac Nolan, for providing advice & feeback gained from his own experience as a developer.
+- I would like to thank my brother, Cormac Nolan, for providing advice & feeback from his own experience gained as a developer.
 
 # Testing
 
@@ -672,14 +672,14 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
 | donate | donation.html | ![screenshot](documentation/validation/donation.html.png) | |
-| generator | add_exercise.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| generator | add_workout.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| generator | edit_exercise.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| generator | edit_workout.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| generator | generator.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| home | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| newsletter | newsletter.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| templates | 404.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| newsletter | newsletter.html | ![screenshot](documentation/validation/newsletter.html.png) | |
+| generator | add_exercise.html | ![screenshot](documentation/validation/add_exercise.html.png) | |
+| generator | add_workout.html | ![screenshot](documentation/validation/add_workout.html.png) | |
+| generator | edit_exercise.html | ![screenshot](documentation/validation/edit_exercise.html.png) | |
+| generator | edit_workout.html | ![screenshot](documentation/validation/edit_workout.png) | |
+| generator | generator.html | ![screenshot](documentation/validation/generator.html.png) | |
+| home | index.html | ![screenshot](documentation/validation/home.html.png.png) | |
+| newsletter | newsletter.html | ![screenshot](documentation/validation/newsletter.html.png.png) | |
 
 ### CSS
 
