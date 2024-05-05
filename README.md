@@ -37,29 +37,29 @@ I used [coolors.co](https://coolors.co/ffffff-fffdd0-ffc107-28a745-007bff-555555
 ### New Site Users
 
 - As a new site user, I would like to register, so that I can create an account. [#1](https://github.com/tadhgnolan/workout-generator/issues/1)
-- As a new site user, I would like to easily navigate the site using the navbar or get back to the home page by clicking the logo.
-- As a new site user, I would like to input my fitness level (beginner, intermediate, advanced), so that the site can generate workouts suitable for me.
-- As a new site user, I would like to specify the equipment I have available (resistance bands, dumbbells, machines etc.), so that the app can generate workouts suitable for what I have available.
-- As a new site user, I would like to be able to substitute exercises, so that I can replace any that are not suitable for me.
-- As a new site user, I would like to be able to donate to the site, so that I can show my support & they can provide a better service.
+- As a new site user, I would like to easily navigate the site using the navbar or get back to the home page by clicking the logo. [#2](https://github.com/tadhgnolan/workout-generator/issues/2)
+- As a new site user, I would like to input my fitness level (beginner, intermediate, advanced), so that the site can generate workouts suitable for me. [#3](https://github.com/tadhgnolan/workout-generator/issues/3)
+- As a new site user, I would like to specify the equipment I have available (resistance bands, dumbbells, machines etc.), so that the app can generate workouts suitable for what I have available. [#4](https://github.com/tadhgnolan/workout-generator/issues/4)
+- As a new site user, I would like to be able to substitute exercises, so that I can replace any that are not suitable for me. [#5](https://github.com/tadhgnolan/workout-generator/issues/5)
+- As a new site user, I would like to be able to donate to the site, so that I can show my support & they can provide a better service. [#6](https://github.com/tadhgnolan/workout-generator/issues/6)
 
 
 ### Returning Site Users
 
-- As a returning site user, I would like to log into my account.
-- As a returning site user, I would like to see a list of new features, so that I can try them out.
-- As a returning site user, I would like to track my progress (workouts completed etc.) over time, so that I can see how I have improved.
-- As a returning site user, I would like to view my workout history, so that I can see what workouts I've done in the past.
-- As a returning site user, I would like to be able to provide feedback on the workout an the app, so that it can be improved over time based on my experience.
+- As a returning site user, I would like to log into my account. [7](https://github.com/tadhgnolan/workout-generator/issues/7)
+- As a returning site user, I would like to see a list of new features, so that I can try them out. [#8](https://github.com/tadhgnolan/workout-generator/issues/8)
+- As a returning site user, I would like to track my progress (workouts completed etc.) over time, so that I can see how I have improved. [#9](https://github.com/tadhgnolan/workout-generator/issues/9)
+- As a returning site user, I would like to view my workout history, so that I can see what workouts I've done in the past. [#10](https://github.com/tadhgnolan/workout-generator/issues/10)
+- As a returning site user, I would like to be able to provide feedback on the workout an the app, so that it can be improved over time based on my experience. [#11](https://github.com/tadhgnolan/workout-generator/issues/11)
 
 ### Site Admin
 
-- As a site administrator, I should be able to log into the admin panel using my credentials, so that I can manage the application. 
-- As a site administrator, I should be able to be able to view all user accounts, so that I can monitor user activity.
-- As a site administrator, I should be able to deactivate or activate user accounts, so that I can manage user access to advamced features of the app.
-- As a site administrator, I should be able to add, edit and delete exercises in the database, so that I can manage the exercises available to users. 
-- As a site administrator, I should be able to able to view user progress and statistics, so that I can understand user engagement and app effectiveness.
-- As a site administrator, I should be able to view and manage user feedback, so that I can improve the app based on user suggestions.
+- As a site administrator, I should be able to log into the admin panel using my credentials, so that I can manage the application. [#12](https://github.com/tadhgnolan/workout-generator/issues/12)
+- As a site administrator, I should be able to be able to view all user accounts, so that I can monitor user activity. [#13](https://github.com/tadhgnolan/workout-generator/issues/13)
+- As a site administrator, I should be able to deactivate or activate user accounts, so that I can manage user access to advamced features of the app. [#14](https://github.com/tadhgnolan/workout-generator/issues/14)
+- As a site administrator, I should be able to add, edit and delete exercises in the database, so that I can manage the exercises available to users. [#15](https://github.com/tadhgnolan/workout-generator/issues/15)
+- As a site administrator, I should be able to able to view user progress and statistics, so that I can understand user engagement and app effectiveness. [#16](https://github.com/tadhgnolan/workout-generator/issues/16)
+- As a site administrator, I should be able to view and manage user feedback, so that I can improve the app based on user suggestions. [#17](https://github.com/tadhgnolan/workout-generator/issues/17)
 
 ## Wireframes
 
@@ -77,7 +77,7 @@ Home
 Workouts
   - ![screenshot](documentation/wireframes/mobile-workouts.png)
 
-Contact
+Newsletter
   - ![screenshot](documentation/wireframes/mobile-newsletter.png)
 
 </details>
@@ -90,10 +90,10 @@ Contact
 Home
   - ![screenshot](documentation/wireframes/ipad-home.png)
 
-Contact
+Workouts
   - ![screenshot](documentation/wireframes/ipad-workouts.png)
 
-Gallery
+Newsletter
   - ![screenshot](documentation/wireframes/ipad-newsletter.png)
 
 </details>
@@ -106,17 +106,11 @@ Gallery
 Home
   - ![screenshot](documentation/wireframes/desktop-home.png)
 
-About
-  - ![screenshot](documentation/wireframes/desktop-about.png)
+Workouts
+  - ![screenshot](documentation/wireframes/desktop-workouts.png)
 
-Contact
-  - ![screenshot](documentation/wireframes/desktop-contact.png)
-
-Gallery
-  - ![screenshot](documentation/wireframes/desktop-gallery.png)
-
-etc.
-  - repeat for any remaining desktop wireframes
+Newsletter
+  - ![screenshot](documentation/wireframes/desktop-newsletter.png)
 
 </details>
 
