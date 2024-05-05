@@ -46,6 +46,12 @@ main {
 .workouts-button:hover,
 .workouts-button:active,
 .workouts-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #0000FF;
+    color: white;
+}
 
 .donate-button {
     background: #222222;
