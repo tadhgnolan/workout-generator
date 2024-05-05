@@ -43,9 +43,9 @@ main {
 
 }
 
-.donate-button:hover,
-.donate-button:active,
-.donate-button:focus,
+.workouts-button:hover,
+.workouts-button:active,
+.workouts-button:focus,
 
 .donate-button {
     background: #222222;
