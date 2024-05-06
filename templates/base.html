@@ -78,11 +78,12 @@
                             <a href="{% url 'add_workout' %}" class="dropdown-item">Add Workout</a>
                             <a href="{% url 'add_exercise' %}" class="dropdown-item">Add Exercise</a>
                             {% endif %}
+                            <a href="#" class="fa dropdown-item" target="_blank" rel="noreferrer"><i
+                                    class="fab fa-facebook-f"></i></a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
                             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Signup</a>
-                            <a href="#" class="dropdown-item">Facebook</a>
                             {% endif %}
                         </div>
                     </li>
