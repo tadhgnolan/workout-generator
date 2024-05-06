@@ -116,21 +116,6 @@ Newsletter
 
 ## Features
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Existing Features
 
 - **Registration Page**
@@ -760,7 +745,6 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 ## Defensive Programming
 
-
 Defensive programming was manually tested with the below user acceptance testing:
 
 | Page | Expectation | Test | Result | Fix | Screenshot |
@@ -782,60 +766,33 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## User Story Testing
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature09.png) |
-| repeat for all remaining user stories | x |
+| As a new site user, I would like to register, so that I can create an account. | ![screenshot](documentation/features/feature01.png) |
+| As a new site user, I would like to easily navigate the site using the navbar or get back to the home page by clicking the logo. | ![screenshot](documentation/features/feature03.png) |
+| As a new site user, I would like to be able to donate to the site, so that I can show my support & they can provide a better service. | ![screenshot](documentation/features/feature06.0.png) |
+| As a returning site user, I would like to log into my account. | ![screenshot](documentation/features/feature02.png) |
+| As a site administrator, I should be able to add, edit and delete exercises in the database, so that I can manage the exercises available to users. | ![screenshot](documentation/features/feature05.2.png) |
+| As a site administrator, I should be able to view all user accounts, so that I can monitor user activity. | ![screenshot](documentation/features/feature08.0.png) |
+| As a site administrator, I should be able to deactivate or activate user accounts, so that I can manage user access to advamced features of the app | ![screenshot](documentation/features/feature09.0.png) |
+| As a site administrator, I should be able to log into the admin panel using my credentials, so that I can manage the application. | ![screenshot](documentation/features/feature10.0.png) |
+| As a site administrator, I should be able to add, edit and delete exercises in the database, so that I can manage the exercises available to users. | ![screenshot](documentation/features/feature11.0.png) |
 
 ## Bugs
 
-- JS Uncaught ReferenceError: `foobar` is undefined/not defined
+- When trying to duplicate allauth templates: 'No such file or directory'
 
     ![screenshot](documentation/bugs/bug01.png)
 
-    - To fix this, I _____________________.
+    - To fix this, I found the correct file path and was able to duplicat the templates.
+        ![screenshot](documentation/bugs/bug02.png)
 
-- JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
-
-    ![screenshot](documentation/bugs/bug02.png)
-
-    - To fix this, I _____________________.
-
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
+- JS variable not associated with correct value.
 
     ![screenshot](documentation/bugs/bug03.png)
 
-    - To fix this, I _____________________.
-
-- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
-
-    ![screenshot](documentation/bugs/bug04.png)
-
-    - To fix this, I _____________________.
-
-- Python `E501 line too long` (93 > 79 characters)
-
-    ![screenshot](documentation/bugs/bug04.png)
-
-    - To fix this, I _____________________.
+    - To fix this, I corrected the file path.
+        ![screenshot](documentation/bugs/bug04.png)
 
 ### GitHub **Issues**
 
@@ -856,17 +813,11 @@ Any remaining open issues can be tracked [here](https://github.com/tadhgnolan/wo
 
     - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
 
-- For PP3, when using a helper `clear()` function, any text above the height of the terminal does not clear, and remains when you scroll up.
+- HTML Validator still returns "No 'p' element in scope but a 'p' end tag seen for all generator pages (workouts, add, edit). I beilieve this may be a conflict with django, but was unable resolve it.
 
-    ![screenshot](documentation/bugs/unfixed-bug02.png)
+    ![screenshot](workout-generator/documentation/validationadd_workout.html.png)
 
-    - Attempted fix: I tried to adjust the terminal size, but it only resizes the actual terminal, not the allowable area for text.
-
-- When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
-
-    ![screenshot](documentation/bugs/unfixed-bug03.png)
-
-    - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
+    - Attempted fix: searching Stack Overflow for simialar issues & checking over templates for any open isolated 'p' end tags.
 
 > [!NOTE]  
 > There are no remaining bugs that I am aware of.
