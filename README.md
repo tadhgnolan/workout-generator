@@ -764,18 +764,18 @@ Defensive programming was manually tested with the below user acceptance testing
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | Home | | | | | |
-| | Creates personal account when user signs up with valid email | Tested the feature by signing up with valid email | The feature behaved as expected, and it created a new user account | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature02.png) |
-| About | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature04.png) |
-| Gallery | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature05.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature06.png) |
-| Contact | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature07.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature08.png) |
-| repeat for all remaining pages | x | x | x | x | x |
+| | Creates personal account when user signs up with valid email | Tested the feature by signing up with valid email | The feature behaved as expected, and it created a new user account | Test concluded and passed | ![screenshot](documentation/defensive/defensive01.png) |
+| | Creates personal account when user signs up with valid email | Tested the feature by signing up with text that was not a valid email | I was asked to please include an '@' in the email address  | Test concluded and passed | ![screenshot](documentation/defensive/defensive02.png) |
+| Workouts | | | | | |
+| | Adds a new exercise when an authorised user selects add exercise and fills out the provided fields | Tested by signing in as admin user, selecting add exercise and filling out required fields | The feature behaved as expected, and added the new exercise | Test concluded and passed | ![screenshot](documentation/defensive/defensive03.png) |
+| | Adds a new workout when an authorised user selects add workouot | Tested by entering the address for adding a new workout | I received the warning 'Access Denied. Admin-only access'. Repeated test with add exercise, edit workout, edit exercise. Same result.  | Test concluded and passed| ![screenshot](documentation/defensive/defensive04.png) |
+| | View exercise opens a link to a wiki when clicked | Tested by clicking under multiple different exercises | Each time the wiki opened in a new tab as expected | Test concluded and passed | ![screenshot](documentation/defensive/defensive05.png) |
+| Donate | | | | | |
+| | Send user purchase confirmation email when stripe payment is completed | Filled out card details and confirmed payment | Transaction completed and confirmation email received | Test concluded and passed | ![screenshot](documentation/defensive/defensive06.png) |
+| | Confirm purchase when stripe form details are filled out | Tested by filling out incorrect date in card details | Received warning 'Your card's expiration date is in the past' | Test concluded and passed | ![screenshot](documentation/defensive/defensive07.png) |
+| Newsletter | | | | | |
+| | Send user confirmation email when they sign up for newsletter | Signed up for newsletter with valid email | The feature behaved as expected, and sent the email | Test concluded and passed | ![screenshot](documentation/defensive/defensive08.png) |
+| | Give user confirmation message when they sign up for newsletter | Tested the feature by entering an invalid email | Received warning to include '@' in email address | Test concluded and passed | ![screenshot](documentation/defensive/defensive09.png) |
 
 
 
