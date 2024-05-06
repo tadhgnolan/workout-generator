@@ -807,17 +807,11 @@ Any remaining open issues can be tracked [here](https://github.com/tadhgnolan/wo
 
 ## Unfixed Bugs
 
-- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
-
-    ![screenshot](documentation/bugs/unfixed-bug01.png)
-
-    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
-
 - HTML Validator still returns "No 'p' element in scope but a 'p' end tag seen for all generator pages (workouts, add, edit). I beilieve this may be a conflict with django, but was unable resolve it.
 
-    ![screenshot](workout-generator/documentation/validationadd_workout.html.png)
+    ![screenshot](documentation/validation/add_workout.html.png)
 
-    - Attempted fix: searching Stack Overflow for simialar issues & checking over templates for any open isolated 'p' end tags.
+        - Attempted fix: searching Stack Overflow for simialar issues & checking over templates for any open isolated 'p' end tags.
 
 > [!NOTE]  
 > There are no remaining bugs that I am aware of.
