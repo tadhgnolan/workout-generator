@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords"
-        content="workout generator, workout, exercise, health, exercise variability, bodybuilding, periodization">
+        content="workout generator, bodybuilding, fitness, periodization, training cycle, exercise variability">
     <meta name="theme-color" content="#FFFDD0">
     <meta name="author" content="Tadhg Nolan">
     <meta name="description" content="Tadhg Nolan | Workout Generator | Dublin, Ireland">
@@ -78,8 +78,6 @@
                             <a href="{% url 'add_workout' %}" class="dropdown-item">Add Workout</a>
                             <a href="{% url 'add_exercise' %}" class="dropdown-item">Add Exercise</a>
                             {% endif %}
-                            <a href="#" class="fa dropdown-item" target="_blank" rel="noreferrer"><i
-                                    class="fab fa-facebook-f"></i></a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
                             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
