@@ -162,32 +162,34 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 - **Edit Workout/Exercise**
 
-    - Admin users can edit workouts and exercises in the database.
+    - Admin users can edit and delete workouts and exercises in the database.
 
 ![screenshot](documentation/features/feature05.0.png)
 ![screenshot](documentation/features/feature05.1.png)
 ![screenshot](documentation/features/feature05.2.png)
 ![screenshot](documentation/features/feature05.3.png)
+![screenshot](documentation/features/feature05.4.png)
+
+- **Donation Page**
+
+    - Users can securely donate through Stripe to help fund and improve the service the website provides.
+
+![screenshot](documentation/features/feature06.0.png)
+![screenshot](documentation/features/feature06.1.png)
+
+
+- **Newsletter Page**
+
+    - Users can sign up to register for a newsletter and receive a confirmation email.
+
+![screenshot](documentation/features/feature07.0.png)
+![screenshot](documentation/features/feature07.1.png)
 
 - **404 Page**
 
     - In case the user somehow navigates to a broken/missing page, there is a 404 page.
 
 ![screenshot](documentation/features/404.png)
-
-- **YOUR-TITLE-FOR-FEATURE-#7**
-
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/features/feature07.0.png)
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Repeat as necessary for as many features as your site contains.
-
-Hint: the more, the merrier!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ### Future Features
 
@@ -777,14 +779,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Send user confirmation email when they sign up for newsletter | Signed up for newsletter with valid email | The feature behaved as expected, and sent the email | Test concluded and passed | ![screenshot](documentation/defensive/defensive08.png) |
 | | Give user confirmation message when they sign up for newsletter | Tested the feature by entering an invalid email | Received warning to include '@' in email address | Test concluded and passed | ![screenshot](documentation/defensive/defensive09.png) |
 
-
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ## User Story Testing
 
