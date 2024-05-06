@@ -361,11 +361,12 @@ updates to business hours, notifications of events, and much more!
 
 I've identified some appropriate keywords to align with my site, that should help users
 when searching online to find my page easily from a search engine.
-This included a series of the following keyword types
+This included a series of the following keyword types (with examples):
 
 - Short-tail (head terms) keywords
+    Bodybuilding, weight training, fitness, muscle building, health, gym. 
 - Long-tail keywords
-
+    Home workouts for bodybuilding with evenly distributed exercises. randomized bodybuilding workout routines for each training cycle, advanced bodybuilding routine with new randomized exercises in each cycle.
 I also played around with [Word Tracker](https://www.wordtracker.com) a bit
 to check the frequency of some of my site's primary keywords (only until the free trial expired).
 
@@ -632,7 +633,7 @@ There are no major differences between the local (Gitpod) version and the live d
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
 | [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
-
+| [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v) | entire repo | basic structure and concepts |
 ### Media
 
 N/A
