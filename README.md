@@ -635,9 +635,7 @@ There are no major differences between the local (Gitpod) version and the live d
 
 ### Media
 
-| Source | Location | Type | Notes |
-| --- | --- | --- | --- |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+N/A
 
 ### Acknowledgements
 
@@ -807,7 +805,7 @@ Any remaining open issues can be tracked [here](https://github.com/tadhgnolan/wo
 
 ## Unfixed Bugs
 
-- HTML Validator still returns "No 'p' element in scope but a 'p' end tag seen for all generator pages (workouts, add, edit). I beilieve this may be a conflict with django, but was unable resolve it.
+- HTML Validator still returns "No 'p' element in scope but a 'p' end tag seen for all generator pages (workouts, add, edit). I believe this may be a conflict with django, but was unable resolve it.
 
     ![screenshot](documentation/validation/add_workout.html.png)
 
