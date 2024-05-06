@@ -84,6 +84,13 @@ main {
 
 /* -------------------------------- Media Queries */
 
+@media (min-width: 320px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
+
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
