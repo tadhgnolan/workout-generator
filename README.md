@@ -752,9 +752,9 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
 | Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
-| Workouts | ![screenshot](documentation/lighthouse/lighthouse-workouts-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | Some minor warnings |
-| Donate | ![screenshot](documentation/lighthouse/lighthouse-donate-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-donate-desktop.png) | Slow response time due to large images |
-| Newsletter | ![screenshot](documentation/lighthouse/lighthouse-newsletter-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-newsletter-desktop.png) | Slow response time due to large images |
+| Workouts | ![screenshot](documentation/lighthouse/lighthouse-workouts-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-workouts-desktop.png) | Some minor warnings |
+| Donate | ![screenshot](documentation/lighthouse/lighthouse-donate-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-donate-desktop.png) | Some minor warnings |
+| Newsletter | ![screenshot](documentation/lighthouse/lighthouse-newsletter-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-newsletter-desktop.png) | Some minor warnings |
 
 ## Defensive Programming
 
@@ -764,7 +764,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | Home | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
+| | Creates personal account when user signs up with valid email | Tested the feature by signing up with valid email | The feature behaved as expected, and it created a new user account | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature02.png) |
 | About | | | | | |
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
